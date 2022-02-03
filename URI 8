@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main() 
+{
+    int nzao, count, azao;
+    scanf("%d", &nzao);
+    
+    for (count = 0; count < nzao; count++)
+    {
+        scanf("%d", &azao);
+        if (!azao)
+        {
+            printf("NULL\n");
+        }
+        else 
+        {
+            if (azao % 2 == 0)
+            {
+                printf("EVEN ");
+            }
+                else
+                {
+                    printf("ODD ");
+                }
+                    if (azao < 0)
+                    {
+                        printf("NEGATIVE\n");
+                    }
+                        else
+                        {
+                            printf("POSITIVE\n");
+                        }   
+        }
+    }
+
+return 0;
+}                  {
+                            printf("POSITIVE\n");
+                        }   
+        }
+    }
+
+return 0;
+}
