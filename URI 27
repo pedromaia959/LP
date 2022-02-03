@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+#define LIM 15
+
+int main()
+{
+    int numeroN, numeroM, controletotal, vet[LIM];
+    
+    while(scanf("%d %d",&numeroM,&numeroN) && (numeroN!=0 || numeroM!=0))
+    {
+        int s = numeroN + numeroM;
+        for( controletotal = 0 ; controletotal < 11 ; controletotal++ )
+        {
+            vet[controletotal] = s %10;
+            s /= 10;
+        }
+        for( controletotal = 10 ; controletotal >= 0 ; controletotal-- )
+        {
+            if(vet[controletotal] != 0)
+            {
+                printf("%d",vet[controletotal]);
+            }
+        }
+    printf("\n");
+    }
+}
