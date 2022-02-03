@@ -1,0 +1,34 @@
+#include <stdio.h>
+ 
+int main() 
+{
+    double xzao, yzao, azao, bzao;
+    scanf("%lf %lf", &xzao, &yzao);
+    
+        if (xzao == 1)
+        {
+            azao = 4.00 * yzao;
+            printf("Total: R$ %.2lf\n", azao);
+        }
+        if (xzao == 2)
+        {
+            azao = 4.50 * yzao;
+            printf("Total: R$ %.2lf\n", azao);
+        }
+        if (xzao == 3)
+        {
+            azao = 5.00 * yzao;
+            printf("Total: R$ %.2lf\n", azao);
+        }
+        if (xzao == 4)
+        {
+            azao = 2.00 * yzao;
+            printf("Total: R$ %.2lf\n", azao);
+        }
+        if (xzao == 5)
+        {
+            azao = 1.50 * yzao;
+            printf("Total: R$ %.2lf\n", azao);
+        }
+return 0;
+}
