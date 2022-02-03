@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() 
+{
+    int cont1 = 0, cont2 = 0, cont3 = 0, cont4 = 0, cont5 = 0, vetor[5];
+    scanf("%d %d %d %d %d", &vetor[0], &vetor[1], &vetor[2], &vetor[3], &vetor[4]);
+    
+    for ( cont2 = 0; cont2 < 5; cont2++)
+    {
+        if (vetor[cont2] % 2 == 0)
+        {
+            cont1++;
+        }
+        if (vetor[cont2] % 2 != 0)
+        {
+            cont3++;
+        }
+    }
+    printf("%d valor(es) par(es)\n", cont1);
+    printf("%d valor(es) impar(es)\n", cont3);
+    
+    for ( cont2 = 0; cont2 < 5; cont2++)
+    {
+        if (vetor[cont2] > 0)
+        {
+            cont4++;
+        }
+        if (vetor[cont2] < 0)
+        {
+            cont5++;
+        }
+    }
+    printf("%d valor(es) positivo(s)\n", cont4);
+    printf("%d valor(es) negativo(s)\n", cont5);
+
+return 0;
+}
