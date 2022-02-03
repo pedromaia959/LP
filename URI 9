@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() 
+{
+    int nzao, count;
+    scanf("%d", &nzao);
+    
+    for (count = 2; count <= nzao; count = count + 2)
+    {
+        printf("%d^2 = %d\n", count, count * count);
+    }
+
+return 0;
+}
