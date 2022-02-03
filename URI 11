@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <string.h>
+#define MAX 25
+int main ()
+{
+    char azao[MAX], bzao[MAX], czao[MAX], *RESULTADO = "aguia";
+    scanf("%s", azao);
+    scanf("%s", bzao);
+    scanf("%s", czao);
+    
+    if (!strcmp(azao, "vertebrado")) 
+    {
+        if (!strcmp(bzao, "ave")) 
+        {
+            if (!strcmp(czao, "onivoro")) 
+            {
+                RESULTADO = "pomba";
+            }
+        }
+        else {
+            if (!strcmp(czao, "onivoro")) 
+            {
+                RESULTADO = "homem";
+            }
+            else 
+            {
+                RESULTADO = "vaca";
+            }
+        }
+    }
+    else 
+    {
+        if (!strcmp(bzao, "inseto")) 
+        {
+            if (!strcmp(czao, "hematofago")) 
+            {
+                RESULTADO = "pulga";
+            }
+            else 
+            {
+                RESULTADO = "lagarta";
+            }
+        }
+        else 
+        {
+            if (!strcmp(czao, "hematofago")) 
+            {
+                RESULTADO = "sanguessuga";
+            }
+            else 
+            {
+                RESULTADO = "minhoca";
+            }
+        }
+    }
+    printf("%s\n", RESULTADO);
+
+return 0;
+}
