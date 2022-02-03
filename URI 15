@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() 
+{
+    int cont, xzao;
+    scanf("%d", &xzao);
+    cont = 1;
+
+    while (cont <= xzao) 
+    {
+        printf("%d\n", cont);
+        cont+=2;
+    }
+
+return 0;
+}
