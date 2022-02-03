@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    int nzao, count;
+    scanf("%d",&nzao);
+    
+    for (count = 1;count < 11; count ++)
+    {
+        printf("%d x %d = %d\n",count , nzao, count * nzao);
+    }
+
+return 0;
+}
