@@ -1,0 +1,38 @@
+#include <stdio.h>
+ 
+int main() 
+{
+    double mediazona, xzao, yzao, azao, bzao, exam, mfinal;
+    scanf("%lf %lf %lf %lf %lf", &xzao, &yzao, &azao, &bzao, &exam);
+    
+    mediazona = ((2*xzao)+(3*yzao)+(4*azao)+(1*bzao))/10;
+    printf("Media: %.1lf\n", mediazona);
+    
+    if (mediazona >= 7.0 && mediazona <= 10.0)
+    {
+        printf("Aluno aprovado.\n");
+    }
+    if (mediazona >= 0.0 && mediazona < 5.0)
+    {
+        printf("Aluno reprovado.\n");
+    }
+    if (mediazona >= 5.0 && mediazona <= 6.9)
+    {
+        printf("Aluno em exame.\n");
+        printf("Nota do exame: %.1lf\n", exam);
+        mfinal = (mediazona + exam)/2;
+        if (mfinal > 5.0)
+        {
+            printf("Aluno aprovado.\n");
+            printf("Media final: %.1lf\n", mfinal);
+        }
+        if (mfinal < 4.9)
+        {
+            printf("Aluno reprovado.\n");
+            printf("Media final: %.1lf\n", mfinal);
+        }
+    }   
+    
+    
+return 0;
+}
