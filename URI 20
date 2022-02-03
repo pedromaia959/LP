@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() 
+{
+    int xzao, u;
+    xzao = 100;
+    
+    for( u = 2; u <= xzao; u = u + 2)
+    {
+        printf("%d\n", u);
+    }
+
+return 0;
+}
