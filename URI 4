@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int nzao, count;
+    double azao, bzao, czao;
+    scanf("%d", &nzao);
+    
+    for (count = 0; count < nzao;count++)
+    {
+        scanf("%lf %lf %lf", &azao, &bzao, &czao);
+        printf("%.1lf\n", (azao*2 + bzao*3 + czao*5)/10);
+    }
+
+return 0;
+}
