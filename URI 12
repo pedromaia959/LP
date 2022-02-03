@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() 
+{
+    int xzao, hzao, mzao;
+    scanf("%d", &xzao);
+    
+    hzao = xzao / 3600;
+    xzao = xzao - hzao * 3600;
+    mzao = xzao / 60;
+    xzao = xzao - mzao * 60;
+    
+    printf("%i:%i:%i\n", hzao, mzao, xzao);
+    
+    return 0;
+}
