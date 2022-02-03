@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+    int numerozao, count, azao, in;
+    in = 0;
+    scanf("%d", &numerozao);
+    
+    for (count = 0; count < numerozao; count++)
+    {
+        scanf("%d", &azao);
+        
+        if (azao >= 10 && azao <= 20)
+        {
+            in++;
+        }
+    }
+    printf("%d in\n%d out\n", in, (numerozao-in));
+
+return 0;
+}
