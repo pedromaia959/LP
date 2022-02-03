@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() 
+{
+int azao, bzao;
+    azao = 1;
+    bzao = 60;
+  
+    for(azao = 1, bzao = 60; bzao <= 60; azao += 3, bzao -= 5)
+    {
+        printf("I=%d J=%d\n", azao, bzao);
+            if(bzao == 0)
+            {
+                break;
+            }
+    }
+
+return 0;
+}
