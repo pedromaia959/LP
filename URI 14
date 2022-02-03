@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() 
+{
+    int azao, bzao, xzao, yzao;
+  
+    scanf("%d %d %d", &azao, &bzao, &xzao);
+    
+    yzao = (azao + bzao + abs(azao-bzao)) / 2;
+    printf("%d eh o maior\n", (yzao + xzao + abs(yzao-xzao)) / 2);
+    
+return 0;
+}
