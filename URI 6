@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int count, nzao;
+    scanf("%d", &nzao);
+    
+    for(count = 1; count <= 10000; count++)
+    {
+        if(count%nzao == 2)
+        {
+            printf("%d\n", count);
+        }
+    }
+    
+return 0;
+}
