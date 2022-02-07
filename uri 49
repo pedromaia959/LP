@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+ 
+int main()
+{
+    double xum, yum, xdois, ydois, algo, raiz, soma1, soma2;
+    scanf("%lf %lf %lf %lf", &xum, &yum, &xdois, &ydois);
+    
+    soma1 = xdois-xum;
+    soma2 = ydois-yum;
+    
+    algo = (soma1*soma1)+(soma2*soma2);
+    raiz = sqrt(algo);
+
+    printf("%.4lf\n", raiz);
+    
+    return 0;
+}
