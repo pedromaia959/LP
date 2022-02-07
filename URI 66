@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    double numero, imposto1, imposto2, a, b, c, w, x, y, z;
+    scanf("%lf", &numero);
+    
+    if (numero >= 0.00 && numero <= 2000.00)
+    {
+        printf("Isento\n");    
+    }
+    if (numero >= 2000.01 && numero <= 3000.00)
+    {
+        imposto1 = ((numero-2000.00)*0.08);
+        printf("R$ %.2lf\n", imposto1);
+    }
+    if (numero >= 3000.01 && numero <= 4500.00)
+    {
+        a = (numero - 3000)*0.18;
+        b = ((numero-(numero - 3000))-2000)*0.08;
+        c = a+b;
+        printf("R$ %.2lf\n", c);
+    }
+    if (numero > 4500.00)
+    {
+        w = (numero - 4500);
+        x = ((numero-w)-3000);
+        y = ((numero-w) - x);
+        z = y - 2000;
+        imposto2 = (w*0.28)+(x*0.18)+(z*0.08);
+        printf("R$ %.2lf\n", imposto2);
+    }
+    
+return 0;
+}
