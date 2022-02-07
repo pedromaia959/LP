@@ -1,0 +1,27 @@
+#include <stdio.h>
+ 
+int main() 
+{
+    double xzao, yzao;
+    scanf("%lf %lf", &xzao, &yzao);
+    
+    if ( xzao > 0 && yzao > 0)
+        printf("Q1\n");
+    if ( xzao < 0 && yzao > 0)
+        printf("Q2\n");
+    if ( xzao < 0 && yzao < 0)
+        printf("Q3\n");
+    if ( xzao > 0 && yzao < 0)
+        printf("Q4\n");
+    else 
+        if ( xzao == 0 && yzao == 0)
+            printf("Origem\n");
+    else
+        if ( xzao == 0 && yzao != 0)
+            printf("Eixo Y\n");
+    else
+        if ( yzao == 0 && xzao != 0)
+            printf("Eixo X\n");
+    
+return 0;
+}
