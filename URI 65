@@ -1,0 +1,25 @@
+#include <math.h>
+#include <stdio.h>
+
+int main()
+{
+    int numero, preta, branca, c1, c2;
+    scanf("%d", &numero);
+    
+    c1 = numero*numero;
+    preta = (c1/2);
+    c2 = (c1%2);
+    
+    if (c2 == 0)
+    {
+        branca = (c1/2);
+    }
+    else
+    {
+        branca = (c1/2)+1;
+    }
+    
+    printf("%d casas brancas e %d casas pretas\n", branca, preta);
+
+return 0;
+}
