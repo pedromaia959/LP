@@ -1,0 +1,17 @@
+#include <stdio.h>
+ 
+int main()
+{
+    double azao, bzao, czao, algo;
+    scanf("%lf %lf %lf", &azao, &bzao, &czao);
+    
+    algo = 3.14159;
+    
+    printf("TRIANGULO: %.3lf\n", (azao*czao/2));
+    printf("CIRCULO: %.3lf\n", (algo * (czao*czao)));
+    printf("TRAPEZIO: %.3lf\n", ((azao+bzao)*czao/2));
+    printf("QUADRADO: %.3lf\n", (bzao*bzao));
+    printf("RETANGULO: %.3lf\n", (bzao*azao));
+ 
+    return 0;
+}
