@@ -1,1 +1,50 @@
 
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int Do, Df, Ho, Mo, So, Hf, Mf, Sf, days, hours, min, sec;
+    scanf("Dia %d\n", &Do);
+    scanf("%d : %d : %d\n", &Ho, &Mo, &So);
+    scanf("Dia %d\n", &Df);
+    scanf("%d : %d : %d\n", &Hf, &Mf, &Sf);
+
+    sec = Sf + (60-So);
+    min = Mf + (59-Mo);
+    hours = Hf + (23-Ho);
+    days = Df - Do;
+
+    if (sec>=60)
+    {
+        sec = sec-60;
+        min = min + 1;
+    }
+    
+    if (min >= 60)
+    {
+        min = min-60;
+        hours = hours + 1;
+    }
+
+    if (hours >= 24)
+    {
+        hours = hours-24;
+        days = days + 1;
+    }
+    
+    if (days == 0 || days == 1)
+    {
+        days=0;
+    }
+
+    else
+        days--;
+
+    printf("%d dia(s)\n", days);
+    printf("%d hora(s)\n", hours);
+    printf("%d minuto(s)\n", min);
+    printf("%d segundo(s)\n", sec);
+
+return 0;
+}
