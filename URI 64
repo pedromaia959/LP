@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    double fl1, fl2, PIB, cuv1, cuv2, cuv3;
+    scanf("%lf", &fl1);
+    scanf("%lf", &fl2);
+    
+    cuv1 = (100+fl1);
+    cuv2 = (cuv1/100);
+    cuv3 = (fl2*cuv2);
+    PIB = (cuv3) + fl1;
+
+    printf("%.6lf\n", PIB);
+
+return 0;
+}
