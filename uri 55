@@ -1,0 +1,15 @@
+#include <math.h>
+#include <stdio.h>
+
+int main()
+{
+    int azao, bzao, czao, dzao, somao;
+    scanf("%d %d %d %d", &azao, &bzao, &czao, &dzao);
+    
+    somao = ((azao*bzao) - (czao*dzao));
+    
+    printf("DIFERENCA = %d\n", somao);
+    
+    
+    return 0;
+}
