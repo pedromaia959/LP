@@ -1,0 +1,15 @@
+#include <math.h>
+#include <stdio.h>
+
+int main()
+{
+    int azao, bzao, somao;
+    scanf("%d %d", &azao, &bzao);
+    
+    somao = azao * bzao;
+    
+    printf("PROD = %d\n", somao);
+    
+    
+    return 0;
+}
