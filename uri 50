@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+ 
+int main()
+{
+    int xzao, yzao; 
+    scanf("%d", &xzao);
+    
+    yzao = xzao*2;
+    
+    printf("%d minutos\n", yzao);
+    
+    return 0;
+}
