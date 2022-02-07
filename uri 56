@@ -1,0 +1,15 @@
+#include <math.h>
+#include <stdio.h>
+
+int main()
+{
+    double azao, bzao, czao, somao;
+    scanf("%lf %lf %lf", &azao, &bzao, &czao);
+    
+    somao = ((azao*2) + (bzao*3) + (czao*5))/10;
+    
+    printf("MEDIA = %.1lf\n", somao);
+    
+    
+    return 0;
+}
