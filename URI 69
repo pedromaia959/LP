@@ -1,0 +1,56 @@
+#include <stdio.h>
+
+int main()
+{
+    double azao, bzao, czao, A, B, C;
+    scanf("%lf %lf %lf", &azao, &bzao, &czao);
+    
+    if (azao <= 0 || bzao <= 0 || czao <=0)
+    {
+        printf("NAO FORMA TRIANGULO\n");
+    }else{
+        if (bzao > azao)
+        {
+            A = 0;
+            A = azao;
+            azao = bzao;
+            bzao = A;
+        }
+        
+        if (czao > azao)
+        {
+            A = 0;
+            A = azao;
+            azao = czao;
+            czao = A;
+        }
+        if (azao >= bzao+czao)
+        {
+            printf("NAO FORMA TRIANGULO\n");
+        }else{
+            if (azao*azao == bzao*bzao + czao*czao)
+            {
+                printf("TRIANGULO RETANGULO\n");
+            }
+            if (azao*azao > bzao*bzao + czao*czao)
+            {
+                printf("TRIANGULO OBTUSANGULO\n");
+            }
+            if (azao*azao < bzao*bzao + czao*czao)
+            {
+                printf("TRIANGULO ACUTANGULO\n");
+            }
+        }
+        if (azao == bzao && bzao == czao)
+        {
+            printf("TRIANGULO EQUILATERO\n");
+        } 
+        if (azao == bzao && azao != czao || bzao == czao && bzao != azao || czao == azao && czao != bzao)
+        {
+            printf("TRIANGULO ISOSCELES\n");
+        }
+    }
+    
+    
+return 0;
+}
