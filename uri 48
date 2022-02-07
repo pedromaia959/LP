@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+ 
+int main()
+{
+    double xzao, yzao, c1, c2; 
+    scanf("%lf %lf", &xzao, &yzao);
+    
+    c1 = xzao*yzao;
+    c2 = c1/12;
+    
+    printf("%.3lf\n", c2);
+    
+    return 0;
+}
