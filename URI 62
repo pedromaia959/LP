@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() 
+{
+    int num, hra, sal;
+    double v;
+    scanf("%d %d", &num, &hra);
+    scanf("%lf", &v);
+    
+    printf("NUMBER = %d\n", num);
+    printf("SALARY = U$ %.2lf\n", v*hra);
+
+return 0;
+}
