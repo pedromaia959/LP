@@ -1,0 +1,29 @@
+#include <stdio.h>
+ 
+int main() 
+{
+    int azao, bzao, algo;
+    scanf("%d %d", &azao, &bzao);
+    
+    if ( azao < bzao )
+    {
+        algo = bzao%azao;
+        if ( algo == 0)
+        {
+            printf("Sao Multiplos\n");
+        } else 
+            printf("Nao sao Multiplos\n");
+    }
+    
+    if ( bzao < azao)
+    {
+        algo = azao%bzao;
+        if ( algo == 0)
+        {
+            printf("Sao Multiplos\n");
+        } else 
+            printf("Nao sao Multiplos\n");
+    }
+
+return 0;
+}
