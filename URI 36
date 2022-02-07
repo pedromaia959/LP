@@ -1,0 +1,51 @@
+#include <stdio.h>
+ 
+int main() 
+{
+    double xzao, algo1, algo2;
+    scanf("%lf", &xzao);
+ 
+    if( xzao >= 0 && xzao <= 400.00)
+    {
+        algo1 = xzao*1.15;
+        algo2 = algo1 - xzao;
+        printf("Novo salario: %.2lf\n", algo1);
+        printf("Reajuste ganho: %.2lf\n", algo2);
+        printf("Em percentual: 15 %\n");
+    } else
+        if ( xzao >= 400.01 && xzao <= 800.00)
+        {
+            algo1 = xzao*1.12;
+            algo2 = algo1 - xzao;
+            printf("Novo salario: %.2lf\n", algo1);
+            printf("Reajuste ganho: %.2lf\n", algo2);
+            printf("Em percentual: 12 %\n");
+        } else 
+            if ( xzao >= 800.01 && xzao <= 1200.00)
+            {
+                algo1 = xzao*1.10;
+                algo2 = algo1 - xzao;
+                printf("Novo salario: %.2lf\n", algo1);
+                printf("Reajuste ganho: %.2lf\n", algo2);
+                printf("Em percentual: 10 %\n");
+            } else 
+                if ( xzao >= 1200.01 && xzao <= 2000.00)
+                {
+                    algo1 = xzao*1.07;
+                    algo2 = algo1 - xzao;
+                    printf("Novo salario: %.2lf\n", algo1);
+                    printf("Reajuste ganho: %.2lf\n", algo2);
+                    printf("Em percentual: 7 %\n");
+                } else 
+                    if ( xzao > 2000)
+                    {
+                        algo1 = xzao*1.04;
+                        algo2 = algo1 - xzao;
+                        printf("Novo salario: %.2lf\n", algo1);
+                        printf("Reajuste ganho: %.2lf\n", algo2);
+                        printf("Em percentual: 4 %\n");    
+                    }
+    
+    
+return 0;
+}
