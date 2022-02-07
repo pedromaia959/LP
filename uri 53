@@ -1,0 +1,14 @@
+#include <stdio.h>
+ 
+int main()
+{
+    double azao, bzao, czao, A, B, C, volume;
+    scanf("%lf %lf %lf", &azao, &bzao, &czao);
+    
+    bzao = 3.14159;
+    volume = (4.0/3) * bzao * (azao*azao*azao);
+    
+    printf("VOLUME = %.3lf\n", volume);
+ 
+    return 0;
+}
