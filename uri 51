@@ -1,0 +1,12 @@
+#include <stdio.h>
+ 
+int main()
+{
+    double azao, bzao, czao, algo;
+    scanf("%lf %lf %lf", &azao, &bzao, &czao);
+    
+
+    printf("%.3lf km/l\n", azao/bzao);
+    
+    return 0;
+}
